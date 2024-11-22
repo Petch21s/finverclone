@@ -33,6 +33,11 @@ db.getConnection((err) => {
   }
 });
 
+expressApp.use(cors({
+  origin: 'https://your-vercel-frontend.vercel.app'
+}))
+
+
 const expressApp = express();
 expressApp.use(bodyParser.json());
 

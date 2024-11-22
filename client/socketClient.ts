@@ -1,6 +1,6 @@
 import { io } from 'socket.io-client';
 
-const socket = io('http://localhost:3000'); // URL ของเซิร์ฟเวอร์
+const socket = io('https://test-deploy-2-zutj.onrender.com'); // URL ของเซิร์ฟเวอร์
 
 socket.on('connect', () => {
     console.log('Connected to server');
